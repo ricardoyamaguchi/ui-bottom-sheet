@@ -2,7 +2,7 @@
 //  BottomSheetTests.swift
 //  BottomSheetTests
 //
-//  Created by Ricardo Yamaguchi on 25/09/21.
+//  Created by Ricardo Yamaguchi on 26/09/21.
 //
 
 import XCTest

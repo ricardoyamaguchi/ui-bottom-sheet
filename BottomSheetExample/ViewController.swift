@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import BottomSheet
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+
+    @IBAction func buttonTap(_ sender: Any) {
+        let viewController = BottomSheetViewController()
+        navigationController?.present(viewController, animated: true)
     }
 
 
