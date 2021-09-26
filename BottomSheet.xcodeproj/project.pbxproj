@@ -18,6 +18,9 @@
 		0A87485E27012DA00027F8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A87485C27012DA00027F8A9 /* LaunchScreen.storyboard */; };
 		0A87486927012DA10027F8A9 /* BottomSheetExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87486827012DA10027F8A9 /* BottomSheetExampleTests.swift */; };
 		0A87487427012DA10027F8A9 /* BottomSheetExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87487327012DA10027F8A9 /* BottomSheetExampleUITests.swift */; };
+		0AA4A3E72701316700679BC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4A3E32701316700679BC0 /* Constants.swift */; };
+		0AA4A3E82701316700679BC0 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4A3E52701316700679BC0 /* BottomSheetViewController.swift */; };
+		0AA4A3E92701316700679BC0 /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA4A3E62701316700679BC0 /* BottomSheetViewController.xib */; };
 		9C755CBDF689398A4B028D9D /* Pods_BottomSheetExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861AC3FC584C71C1E8F7AA46 /* Pods_BottomSheetExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,9 @@
 		0A87486F27012DA10027F8A9 /* BottomSheetExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BottomSheetExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A87487327012DA10027F8A9 /* BottomSheetExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetExampleUITests.swift; sourceTree = "<group>"; };
 		0A87487527012DA10027F8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA4A3E32701316700679BC0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0AA4A3E52701316700679BC0 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		0AA4A3E62701316700679BC0 /* BottomSheetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
 		1FD1CE40C1B1EF108C6F77F9 /* Pods-BottomSheetExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BottomSheetExample.debug.xcconfig"; path = "Target Support Files/Pods-BottomSheetExample/Pods-BottomSheetExample.debug.xcconfig"; sourceTree = "<group>"; };
 		861AC3FC584C71C1E8F7AA46 /* Pods_BottomSheetExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BottomSheetExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9645B20BB915D51E07BC5337 /* Pods-BottomSheetExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BottomSheetExample.release.xcconfig"; path = "Target Support Files/Pods-BottomSheetExample/Pods-BottomSheetExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 		0A87483327012D3E0027F8A9 /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
+				0AA4A3E22701316700679BC0 /* Common */,
+				0AA4A3E42701316700679BC0 /* View */,
 				0A87483427012D3E0027F8A9 /* BottomSheet.h */,
 				0A87483527012D3E0027F8A9 /* Info.plist */,
 			);
@@ -201,6 +209,23 @@
 				0A87487527012DA10027F8A9 /* Info.plist */,
 			);
 			path = BottomSheetExampleUITests;
+			sourceTree = "<group>";
+		};
+		0AA4A3E22701316700679BC0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0AA4A3E32701316700679BC0 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0AA4A3E42701316700679BC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AA4A3E52701316700679BC0 /* BottomSheetViewController.swift */,
+				0AA4A3E62701316700679BC0 /* BottomSheetViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EBD8F993DC50D488954E9A42 /* Pods */ = {
@@ -372,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4A3E92701316700679BC0 /* BottomSheetViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +464,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4A3E72701316700679BC0 /* Constants.swift in Sources */,
+				0AA4A3E82701316700679BC0 /* BottomSheetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +721,7 @@
 		0A87484927012D3E0027F8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A723W25N6;
 				INFOPLIST_FILE = BottomSheetTests/Info.plist;
@@ -711,6 +740,7 @@
 		0A87484A27012D3E0027F8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A723W25N6;
 				INFOPLIST_FILE = BottomSheetTests/Info.plist;
