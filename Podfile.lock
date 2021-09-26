@@ -1,0 +1,16 @@
+PODS:
+  - BottomSheet (0.0.1)
+
+DEPENDENCIES:
+  - BottomSheet (from `.`)
+
+EXTERNAL SOURCES:
+  BottomSheet:
+    :path: "."
+
+SPEC CHECKSUMS:
+  BottomSheet: d06a4c5d02a21dd6e1677c13bde25fa372bf9b91
+
+PODFILE CHECKSUM: aea272fcc792c53bea0be2cc27cfe38c99605969
+
+COCOAPODS: 1.11.2
